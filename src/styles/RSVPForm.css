@@ -1,42 +1,78 @@
-.rsvp {
-    text-align: center;
-    padding: 30px 20px;
-    background: #f9f7f4;
-  }
-  
-  .rsvp h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #8b6c42;
-  }
-  
-  .rsvp-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .rsvp-form input,
-  .rsvp-form select,
-  .rsvp-form button {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #d8c9a7;
-    border-radius: 5px;
-  }
-  
-  .rsvp-form button {
-    background: #e0c78f;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .rsvp-form button:hover {
-    background: #c9a967;
-  }
-  
+.rsvp-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+.rsvp-form h2 {
+  text-align: center;
+  color: #8b6c42;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #8b6c42;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  transform: scale(1.2);
+}
+
+.rsvp-form button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background: #8b6c42;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.rsvp-form button:hover {
+  background: #a07b53;
+}
+
+.success-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

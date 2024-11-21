@@ -19,10 +19,14 @@ const PhotoGallery = ({ photos, initialPhoto, onClose }) => {
   return (
     <div className="gallery-overlay">
       <div className="gallery-content">
-        <img src={photos[currentIndex]} alt="Foto ampliada" className="gallery-photo" />
         <button className="gallery-button close" onClick={onClose}>
           ✖
         </button>
+        <img
+          src={photos[currentIndex]}
+          alt="Foto ampliada"
+          className="gallery-photo"
+        />
         <button className="gallery-button previous" onClick={goToPrevious}>
           ◀
         </button>

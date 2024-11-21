@@ -4,7 +4,8 @@ import "./../styles/HeroSection.css";
 
 const photos = [
   "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732226240/Simon_arbol_hqfvjn.jpg",
-  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732226239/Simon_zuc0wj.jpg"
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732226239/Simon_zuc0wj.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732230842/Simon1_mmgeuq.jpg"
 ];
 
 const HeroSection = () => {

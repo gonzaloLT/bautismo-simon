@@ -8,9 +8,12 @@ const LocationSection = ({ title, mapUrl }) => {
       <div className="map-container">
         <iframe
           src={mapUrl}
+          title={title}
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
-          title={title}
         ></iframe>
       </div>
     </section>

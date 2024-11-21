@@ -1,0 +1,19 @@
+.image {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .image h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b6c42;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

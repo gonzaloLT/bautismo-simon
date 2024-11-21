@@ -2,28 +2,24 @@ import React, { useEffect, useState } from "react";
 import "./../styles/ScrollArrow.css";
 
 const ScrollArrow = () => {
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
-  const updateScrollProgress = () => {
-    const scrollTop = document.documentElement.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const progress = (scrollTop / scrollHeight) * 100;
-    setScrollProgress(progress);
+  const handleScroll = () => {
+    const heroHeight = document.querySelector(".hero").offsetHeight;
+    setIsVisible(window.scrollY < heroHeight);
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", updateScrollProgress);
-    return () => window.removeEventListener("scroll", updateScrollProgress);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  if (!isVisible) return null;
+
   return (
-    <div
-      className="scroll-arrow"
-      style={{
-        top: `${scrollProgress}%`,
-      }}
-    >
+    <div className="scroll-arrow">
       <span>▼</span>
+      <p>Desplázate hacia abajo</p>
     </div>
   );
 };
