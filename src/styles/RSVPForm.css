@@ -1,0 +1,42 @@
+.rsvp {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f9f7f4;
+  }
+  
+  .rsvp h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b6c42;
+  }
+  
+  .rsvp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .rsvp-form input,
+  .rsvp-form select,
+  .rsvp-form button {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #d8c9a7;
+    border-radius: 5px;
+  }
+  
+  .rsvp-form button {
+    background: #e0c78f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .rsvp-form button:hover {
+    background: #c9a967;
+  }
+  

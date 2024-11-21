@@ -1,0 +1,18 @@
+.location {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .location h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b6c42;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 0;
+  }
+  
