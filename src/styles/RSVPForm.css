@@ -76,3 +76,27 @@
   font-weight: bold;
   margin-top: 10px;
 }
+
+/* Estilo para el mensaje de confirmación */
+.confirmation-message {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #f9f6f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.confirmation-message h2 {
+  color: #8b6c42;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.confirmation-message p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 0;
+}

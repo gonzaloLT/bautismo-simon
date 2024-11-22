@@ -7,3 +7,26 @@ body {
     box-sizing: border-box;
   }
   
+  h3 {
+    text-align: center;
+    background: #f5e0b7;
+    color: #8b6c42;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #8b6c42;
+    margin: 20px auto; /* Espacio entre HeroSection y h3 */
+    max-width: 90%; /* Asegura un buen ajuste en pantallas pequeñas */
+  }
+  
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 2rem; /* Tamaño más grande en pantallas amplias */
+      max-width: 70%; /* Ajuste en pantallas grandes */
+    }
+  }
+  
+  
+  

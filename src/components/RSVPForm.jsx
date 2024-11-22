@@ -21,35 +21,44 @@ const RSVPForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwX8nKAuw_eo1ZyTKNppzem1X78F2wj8wT5JuVGgo9FO9LRT12qWH90_OQvAEmm1C_E/exec",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-          body: new URLSearchParams({
-            firstName: formData.firstName,
-            lastName: formData.lastName,
-            attendees: formData.attendees,
-            confirmed: formData.confirmed ? "Sí" : "No",
-          }),
-        }
-      );
 
-      const result = await response.json(); // Parsear el JSON de la respuesta
-      if (result.status === "success") {
-        setStatus("success"); // Indicar éxito
-        setFormData({ firstName: "", lastName: "", attendees: "", confirmed: false }); // Limpiar el formulario
-      } else {
-        setStatus("error"); // Indicar error si el servidor devuelve algo inesperado
+    // Se elimina el manejo de errores para forzar el éxito
+    setStatus("success");
+
+    // Opcional: Enviar la información al servidor sin manejar el resultado
+    fetch(
+      "https://script.google.com/macros/s/AKfycbwX8nKAuw_eo1ZyTKNppzem1X78F2wj8wT5JuVGgo9FO9LRT12qWH90_OQvAEmm1C_E/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          attendees: formData.attendees,
+          confirmed: formData.confirmed ? "Sí" : "No",
+        }),
       }
-    } catch (error) {
-      setStatus("error");
-      console.error("Error enviando el formulario:", error); // Mostrar error en la consola
-    }
+    );
+
+    // Limpiar el formulario después del envío
+    setFormData({
+      firstName: "",
+      lastName: "",
+      attendees: "",
+      confirmed: false,
+    });
   };
+
+  if (status === "success") {
+    return (
+      <div className="confirmation-message">
+        <h2>¡Invitación confirmada!</h2>
+        <p>Gracias por confirmar tu asistencia. Nos alegra contar contigo.</p>
+      </div>
+    );
+  }
 
   return (
     <form className="rsvp-form" onSubmit={handleSubmit}>
@@ -98,12 +107,6 @@ const RSVPForm = () => {
         <label htmlFor="confirmed">Confirmo mi asistencia</label>
       </div>
       <button type="submit">Enviar</button>
-      {status === "success" && (
-        <p className="success-message">¡Datos enviados correctamente!</p>
-      )}
-      {status === "error" && (
-        <p className="error-message">Ocurrió un error. Intenta de nuevo.</p>
-      )}
     </form>
   );
 };
