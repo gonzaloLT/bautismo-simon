@@ -18,7 +18,7 @@ const App = () => {
         mapUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6688.1483175834355!2d-65.6182644!3d-33.0545144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d393201c433a11%3A0x6482f986c22130f!2sIglesia%20Santo%20Domingo%20de%20Guzm%C3%A1n!5e0!3m2!1ses!2sar!4v1732231619557!5m2!1ses!2sar"
       />
 
-      <p>Luego del bautismo iremos a pasar el dia a la quinta de "Mi lugar Nany"</p>
+      <p>Luego del bautismo iremos a pasar el dia a la quinta de "Mi lugar Nanny"</p>
       <VideoSection
         title="Asi puedes llegar a la quinta"
         videoUrl="https://www.youtube.com/embed/example1"
