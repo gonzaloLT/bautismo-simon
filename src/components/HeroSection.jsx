@@ -5,7 +5,10 @@ import "./../styles/HeroSection.css";
 const photos = [
   "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732226240/Simon_arbol_hqfvjn.jpg",
   "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732226239/Simon_zuc0wj.jpg",
-  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732230842/Simon1_mmgeuq.jpg"
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732230842/Simon1_mmgeuq.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732287098/Simoon_a6wiio.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732287098/Simon3_u6b6ev.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732287098/Simone_gxkj8k.jpg"
 ];
 
 const HeroSection = () => {
