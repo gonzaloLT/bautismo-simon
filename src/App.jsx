@@ -19,9 +19,10 @@ const App = () => {
       />
 
       <p>Luego del bautismo iremos a pasar el dia a la quinta de "Mi lugar Nanny"</p>
+      <p>Si no sabes como llegar te dejamos un video a continuacion desde la iglesia</p>
       <VideoSection
-        title="Asi puedes llegar a la quinta"
-        videoUrl="https://www.youtube.com/embed/example1"
+        title="Recorrido a la quinta"
+        videoUrl="https://www.youtube.com/embed/GTseqgW01MA?si=XcWZikXbPQGHSQBt"
       />
       <LocationSection
         title="Ubicación de la quinta"
