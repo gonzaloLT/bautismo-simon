@@ -8,7 +8,11 @@ const photos = [
   "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732230842/Simon1_mmgeuq.jpg",
   "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732287098/Simoon_a6wiio.jpg",
   "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732287098/Simon3_u6b6ev.jpg",
-  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732287098/Simone_gxkj8k.jpg"
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732287098/Simone_gxkj8k.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732468197/SimonBook4_zzufnt.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732468197/SimonBook2_yas2fs.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732468197/SimonBook3_gmsbhy.jpg",
+  "https://res.cloudinary.com/dgb9dxijv/image/upload/v1732468196/SimonBook1_i6yeab.jpg"
 ];
 
 const HeroSection = () => {
